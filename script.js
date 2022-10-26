@@ -41,18 +41,18 @@ function readFormData(){
         error1.innerHTML = "name cannot blank!";
     }
     else if(formData.address === ""){
+        error1.innerHTML = ""
         error2.innerHTML = "address cannot blank!";
     }
     else if(formData.phno === ""){
+        error2.innerHTML = "";
         error3.innerHTML ="plz! telphone number";
     }
     else if(formData.email === ""){
+        error3.innerHTML ="";
         error4.innerHTML = "Enter email";
     }
     else{
-        error1.innerHTML = "";
-        error2.innerHTML = "";
-        error3.innerHTML ="";
         error4.innerHTML = "";
         // insert value
         if(tr === null){
