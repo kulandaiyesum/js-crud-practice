@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD program</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <section class="left">
+                <form id="myForm" method="get" autocomplete="off">
+                    <h2>Create a new contact</h2>
+                    <!-- name -->
+                    <div class="input-control">
+                        <label for="fullname">&nbsp;&nbsp;&nbsp;&nbsp;Name:</label><br>
+                        <input type="text" id="fullname" name="full name">
+                        <div id="error1"></div>
+                    </div>
+                    <!-- Address -->
+                    <div class="input-control">
+                        <label for="address">&nbsp;&nbsp;&nbsp;&nbsp;Address:</label><br>
+                        <input type="text" id="address" name="address">
+                        <div id="error2"></div>
+                    </div>
+                    <!-- Telephone -->
+                    <div class="input-control">
+                        <label for="phno">&nbsp;&nbsp;&nbsp;&nbsp;Telephone:</label><br>
+                        <input type="text" id="phno" name="phno">
+                        <div id="error3"></div>
+                    </div>
+                    <!-- Email -->
+                    <div class="input-control">
+                        <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;Email:</label><br>
+                        <input type="text" id="email" name="email">
+                        <div id="error4"></div>
+                    </div>
+                    <!-- Website -->
+                    <div class="input-control">
+                        <label for="web">&nbsp;&nbsp;&nbsp;&nbsp;Website:</label><br>
+                        <input type="text" id="web" name="web">
+                        <div id="error5"></div>
+                    </div>
+                    <!-- button -->
+                    <button id="btnSubmit" type="submit">Create contacts</button>
+                </form>
+
+            </section>
+
+            <!-- contacts -->
+            <section class="right">
+                <!-- search -->
+                <section class="search-box">
+                    <div>
+                        <input type="text" id="searchBox" placeholder="search here">
+                        <button id="search" onclick="searchFn()">Search</button>
+                        <span class="res"></span>
+                    </div>
+                </section>
+                <!-- table -->
+                <table class="list" id="contactList">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Telephone</th>
+                            <th>Email</th>
+                            <th>Website</th>
+                            <th>Option</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

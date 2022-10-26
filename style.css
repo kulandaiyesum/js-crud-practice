@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container {
+    width: 96%;
+    margin: 0 auto;
+    /* background-color: bisque; */
+    height: 100vh;
+}
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    width: 22%;
+}
+.right {
+    width: 76%;
+    overflow: auto;
+    max-height: 500px
+}
+#myForm {
+    background-color: #eee;
+    padding: 20px;
+}
+#myForm h2 {
+    font-size: 30px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+#myForm button {
+    padding: 10px;
+    margin-top: 10px;
+    width:100%;
+    color: white;
+    background-color: rgb(41,57,194);
+    border: none;
+    border-radius: 4px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border: 2px solid #ddd;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+input:focus {
+    outline: 0;
+}
+/* input {
+    border-color: #09c372;
+}
+input {
+    border-color: #ff3860 ;
+} */
+.error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+/* table */
+.list {
+    width: 100%;
+    border: 1px solid #ddd;
+
+}
+.list thead {
+    width: 100%;
+}
+.list th {
+    background-color: #ddd;
+    padding: 8px 16px;
+}
+td {
+    padding: 8px 16px;
+}
+td button {
+    background-color: blue;
+    color:white;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+}
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+.search-box{
+    height: 80px;
+}
+.search-box div {
+    width: 100%;
+}
+.search-box input {
+    width: 90%;
+    padding: 6px;
+}
+.search-box button {
+    display: inline;
+    padding: 8px 16px;
+    margin-left: 20px; 
+    background: blue;
+    border: none;
+    border-radius: 4px;
+    color: white;
+
+}
+/* .input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+} */
+
