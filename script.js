@@ -52,6 +52,9 @@ function readFormData(){
         error3.innerHTML ="";
         error4.innerHTML = "Enter email";
     }
+    else if(!isValidEmail(formData.email)){
+        error4.innerHTML = "Enter valid email";
+    }
     else{
         error4.innerHTML = "";
         // insert value
@@ -112,4 +115,10 @@ function resetForm() {
     document.getElementById("email").value = "";
     document.getElementById("web").value = "";
     tr = null;
+}
+
+
+const isValidEmail = email => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
 }
